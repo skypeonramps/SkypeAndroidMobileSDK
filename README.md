@@ -15,14 +15,14 @@ The SDK will only work with Skype Client 6.2 and higher. The Skype client curren
 
 #### Importing SDK library
 
-* Add this to Module-level /app/build.gradle before dependencies*
+* Add this to project-level /app/build.gradle before dependencies*
 ```javascript
 repositories {
 	jcenter()
 }
 ```
 
-* Add the compile dependency with the latest version of the Skype Mobile SDK in the build.gradle file:
+* Add the compile dependency with the latest version of the Skype Mobile SDK in the build.gradle file for your module that uses this sdk:
 ```javascript
 dependencies {
 compile 'com.skype.android.skype-android-sdk:MobileSdk:1.0.0.0'
