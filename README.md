@@ -25,7 +25,7 @@ repositories {
 * Add the compile dependency with the latest version of the Skype Mobile SDK in the build.gradle file:
 ```javascript
 dependencies {
-compile “com.skype.android.skype-android-sdk:MobileSdk:1.0”
+compile 'com.skype.android.skype-android-sdk:MobileSdk:1.0.0.0'
 }
 ```
 
