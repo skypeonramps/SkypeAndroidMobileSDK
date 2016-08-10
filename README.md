@@ -31,9 +31,10 @@ compile 'com.skype.android.skype-android-sdk:MobileSdk:1.0.0.0'
 
 #### Usage Example
 ```java
-skypeApi = new SkypeApi(getApplicationContext());
 try {
-    skypeApi.startConversation(skypeIdValue.toString(), Modality.AudioCall);
+	SkypeApi skypeApi = new SkypeApi(getApplicationContext());
+
+    	skypeApi.startConversation(skypeIdValue.toString(), Modality.AudioCall);
 } catch (SkypeSdkException e) {
  // Exception handling logic here
 }
