@@ -4,7 +4,7 @@ Skype Consumer Android Mobile SDK (Preview)
 The Skype Consumer Android SDK enables a developer to easily add an IM or Call action (button) to your application to contact a specific user or join a specific conversation. Currently it wraps supported intents that enable deep linking into Skype.
 
 ### Prerequisites 
-The SDK will only work with Skype Client 6.2 and higher. The Skype client currently supports a minimum version of Android 4.0.3. [See FAQ for more details](https://support.skype.com/en/faq/FA10328/what-are-the-system-requirements-for-skype).
+The SDK will only work with Skype Client 7.11 and higher. The Skype client currently supports a minimum version of Android 4.0.3. [See FAQ for more details](https://support.skype.com/en/faq/FA10328/what-are-the-system-requirements-for-skype).
 
 ### Using the Android SDK
 
