@@ -1,7 +1,5 @@
-Skype Consumer Mobile SDK (Preview)
-===================================
-
-## Android SDK
+Skype Consumer Android Mobile SDK (Preview)
+===========================================
 
 The Skype Consumer Android SDK enables a developer to easily add an IM or Call action (button) to your application to contact a specific user or join a specific conversation. Currently it wraps supported intents that enable deep linking into Skype.
 
