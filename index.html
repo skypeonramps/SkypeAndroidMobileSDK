@@ -32,10 +32,19 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-<p>The Skype Consumer Android SDK enables a developer to easily add an IM or Call action (button) to your application to contact a specific user or join a specific conversation. Currently it wraps supported intents that enable deep linking into Skype.</p>
+<h3>Overview</h3>
+The SDK described on this page is specifically for Skype, not Skype for Business.
+
+<h3>What can I do with it?</h3>
+Help your users get in contact with you by instant message, video or voice call. Use Skype’s infrastructure to power your communication.
+This SDK will allow you to deep link to a call or instant message chat in the Skype app using an Intent, removing the complexity of building URLs for Intents.
+
+<h3>Compatibility</h3>
+Your users will need version 7.11 or higher of the Skype app for the linking to work. Most people will be on the latest version of the Skype app, unless they are on a version of Android lower than 4.0.3. Support for older versions of Android can be found in this <a href="https://go.skype.com/skype.system.reqs">guide to Skype system requirements.</a>
 
 <h3>Prerequisites</h3>
-The SDK will only work with Skype Client 7.11 and higher. The Skype client currently supports a minimum version of Android 4.0.3. See FAQ for more details.
+You will need the Skype Name of the person or bot that you want your users to connect with. If you are going to determine the Skype Name programmatically (maybe you want to display more than one link to Skype with different Skype Names) then your app will need to retrieve the relevant Skype Name and pass it to the Intent as a parameter.
+
 
 <h3>API reference</h3>
 Click <a href="javadoc/index.html">here</a> to view the javadocs for the sdk.
@@ -47,7 +56,7 @@ Click <a href="javadoc/index.html">here</a> to view the javadocs for the sdk.
 </ol>
 
 
-<h5>Importing SDK library</h5>
+<h5>1. Importing SDK library</h5>
 <li type".">Add this to project-level /app/build.gradle before dependencies</li>
 
 <pre><code>repositories {
@@ -62,6 +71,8 @@ compile 'com.skype.android.skype-android-sdk:MobileSdk:1.0.0.0'
 }
 </code></pre>
 
+<h5>2. Call the api</h5>
+Details of the API and how to call it are described in the <a href="javadoc/index.html">API documentation.</a> The embeddable button will initiate a Skype call to a specific Skype user. To create the button, you need to know their Skype Name. In most cases this will be one that you already manage, if you don’t know your Skype Name, <a href="https://go.skype.com/find.skype.name">this guide</a> will help you find it.
 
 <h5>Usage Example</h5>
 <pre><code>try {
@@ -72,6 +83,18 @@ compile 'com.skype.android.skype-android-sdk:MobileSdk:1.0.0.0'
  // Exception handling logic here
 }
 </code></pre>
+
+<BR/>
+
+<h5>3. Style your link</h5>
+Your link to the Skype app must follow these <a href="https://go.skype.com/brand.guide">branding guidelines.</a>
+
+<BR/><BR/>
+
+<h5>4. Update your Skype privacy settings</h5>
+You should make sure that the Skype Names that you are using are configured to allow incoming calls and / or messages from anyone. To change your privacy settings, you need to install Skype on a PC or Mac. Read about how to change your settings from <a href="https://go.skype.com/windows.privacy">Skype for Windows</a> and <a href="https://go.skype.com/mac.privacy">Skype for Mac.</a>
+<b>Note:</b> By default, Skype is setup not to allow instant messages from people that aren’t in your Skype contacts list. If you’re using the SDK for instant messaging, we strongly advise you to change your privacy settings.
+Your use of this SDK is subject to the <a href="https://go.skype.com/skype.buttons.legal">Terms of Use.</a>
 
   </body>
 </html>
