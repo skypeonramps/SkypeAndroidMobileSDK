@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">TestApp</string>
-    <string name="chat">Chat</string>
-    <string name="app_title_text">Test App for do.skype.com</string>
-    <string name="audioCall">Audio</string>
-    <string name="videoCall">Video</string>
-    <string name="SkypeIdBoxLabel">SkypeId</string>
-    <string name="join">Join</string>
-</resources>
